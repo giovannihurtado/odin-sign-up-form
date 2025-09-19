@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sing Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper-form">
+      <aside class="form-aside">
+        <img
+          src="./assents/emils-nemse-nVRfVVKPfD8-unsplash.jpg"
+          alt=""
+          class="form-img"
+        />
+        <p>
+          <a
+            href="https://unsplash.com/es/@ejn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="img-credit"
+            >Photo by ejn on Unsplash"></a
+          >
+        </p>
+      </aside>
+      <section class="section-form">
+        <article class="text-form">
+          <p class="text-form-paragraph">
+            This is not real online service! You know you need something like
+            this in your live to help to realize your deepest dreams. sign up
+            <em>now</em> to get started.
+          </p>
+          <p class="text-form-paragraph">You <em>know</em> you watn to.</p>
+        </article>
+        <form action="/submit" method="post" class="form">
+          <div class="form-title">
+            <h2 class="title-form">Let's do this</h2>
+          </div>
+          <fieldset>
+            <label for="name">FIRST NAME</label>
+            <input type="text" name="name" id="name" />
+
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" />
+          </fieldset>
+
+          <fieldset>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" />
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone" id="phone" />
+          </fieldset>
+
+          <fieldset>
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" />
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </fieldset>
+          <fieldset>
+            <button type="submit" class="btn-form">Create Account</button>
+            <p class="text-form-paragraph">
+              Already have an account?
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-form"
+                >Sign In</a
+              >
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
