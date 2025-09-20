@@ -19,7 +19,7 @@ This project is a sign-up form page, created as part of [The Odin Project's](htt
 
 You can see a live version of the project here: Live Demo Link
 
-*(Replace the link above with your actual deployment link, for example, from GitHub Pages.)*
+[DEMO LINK](https://giovannihurtado.github.io/odin-sign-up-form/)
 
 ## 🛠️ Technologies Used
 
