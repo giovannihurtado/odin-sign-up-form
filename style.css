@@ -1,0 +1,168 @@
+:root {
+  --img-title: #ffffff;
+  --color-btn: #596d48;
+  --invalid-input: #cc1a17;
+  --focus-input: #5729ce;
+  --bgc-header: #fcfbf4;
+  --bgc-form: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: "Ubuntu", sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.form-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(./assents/emils-nemse-nVRfVVKPfD8-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  width: 70%;
+  min-height: 400px;
+}
+
+.form-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-img-container h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--img-title);
+}
+
+.form-img {
+  z-index: 2;
+  max-width: 200px;
+  height: auto;
+}
+
+.form-aside p a {
+  padding: 4px;
+  color: var(--img-title);
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-signup {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgc-form);
+}
+
+.form-signup header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 20px;
+  padding: 60px 20px 40px;
+  background-color: var(--bgc-header);
+  gap: 20px;
+}
+
+.text-form {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.form-title {
+  padding: 20px;
+}
+
+.form-signup fieldset {
+  display: flex;
+  padding: 20px;
+  gap: 12px;
+  border: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border: 2px solid var(--focus-input);
+  outline: none;
+}
+
+input:valid {
+  border: 2px solid var(--valid-input);
+  outline: none;
+}
+
+.form-actions {
+  padding: 20px;
+  background-color: var(--bgc-header);
+}
+
+.btn-form {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-btn);
+  color: var(--bgc-header);
+}
+
+footer {
+  padding: 10px 20px 60px;
+  background-color: var(--bgc-header);
+}
+
+footer p a {
+  padding: 4px;
+  color: var(--color-btn);
+  font-weight: 500;
+  text-decoration: none;
+}
