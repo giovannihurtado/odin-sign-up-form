@@ -1,7 +1,8 @@
 :root {
   --img-title: #ffffff;
   --color-btn: #596d48;
-  --invalid-input: #cc1a17;
+  --input-valid: #3aab75;
+  --input-invalid: #e81416;
   --focus-input: #5729ce;
   --bgc-header: #fcfbf4;
   --bgc-form: #ffffff;
@@ -128,18 +129,26 @@ input[type="password"],
 input[type="tel"] {
   padding: 8px;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #cdd0d4;
   border-radius: 4px;
 }
 
-input:focus {
-  border: 2px solid var(--focus-input);
+input:invalid {
+  border: 0.5px solid var(--input-invalid);
+  box-shadow: rgba(232, 20, 22, 0.3) 0px 0px 0px 2px;
   outline: none;
 }
 
 input:valid {
-  border: 2px solid var(--valid-input);
+  border: 1px solid var(--input-valid);
+  box-shadow: rgba(80, 200, 120, 0.3) 0px 0px 0px 2px;
   outline: none;
+}
+
+input:focus {
+  border: 0.2px solid var(--focus-input);
+  outline: none;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
 }
 
 .form-actions {
@@ -153,6 +162,8 @@ input:valid {
   border-radius: 8px;
   background-color: var(--color-btn);
   color: var(--bgc-header);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 footer {
